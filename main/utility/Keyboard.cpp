@@ -132,10 +132,10 @@ void Keyboard_Class::updateKeysState() {
 
     // Get special keys
     for (auto& i : _key_list_buffer) {
-        if (strcmp(getKeyValue(i).value_first, "tab") == 0) {
-            _keys_state_buffer.tab = true;
-            continue;
-        }
+        // if (strcmp(getKeyValue(i).value_first, "tab") == 0) {
+        //     _keys_state_buffer.tab = true;
+        //     continue;
+        // }
 
         if (strcmp(getKeyValue(i).value_first, "fn") == 0) {
             _keys_state_buffer.fn = true;
